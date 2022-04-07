@@ -32,8 +32,6 @@ async def main_teletips():
                 TimeZone_teletips = datetime.datetime.now(pytz.timezone(f"{Time_Zone}"))
                 Time_teletips = TimeZone_teletips.strftime("%I:%M %p")
                 Date_teletips = TimeZone_teletips.strftime("%b %d") 
-                except Exception:
-                    pass        
                 print("Profile Updated!")
             await asyncio.sleep(60)     
     except FloodWait as e:
